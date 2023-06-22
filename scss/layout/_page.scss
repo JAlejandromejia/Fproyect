@@ -1,0 +1,213 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: $title-font;
+    color: $title-color;
+    font-size: 20px;
+    padding-top: 80px;
+    padding-left: 10px;
+}
+
+h2 {
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+h5 {
+    font-family: $title-font;
+    color: $title-color;
+}
+
+
+p {
+    color: $text-color;
+    font-family: $text-font;
+    padding-top: 10px;
+}
+
+.imgcarrucel {
+    width: 100%;
+    height: 600px;
+    object-fit: cover
+}
+
+.imgsection {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.gridproducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            color: $text-color;
+            font-family: $text-font;
+        }
+
+        &:hover {
+            filter: saturate(170%);
+            transform: scale(1.1);
+            transition: .3s;
+        }
+    }
+}
+
+.gridmodels {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    grid-template-areas:
+        'area1 area2 area3'
+        'area4 area5 area6';
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    p:hover {
+        color: $hover-color;
+        transition: 0.3s;
+    }
+
+    .b1 {
+        grid-area: area1;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+        font-family: $text-font;
+    }
+
+    .b2 {
+        grid-area: area2;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+        font-family: $text-font;
+    }
+
+    .b3 {
+        grid-area: area3;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+        font-family: $text-font;
+    }
+
+    .b4 {
+        grid-area: area4;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+        font-family: $text-font;
+    }
+
+    .b5 {
+        grid-area: area5;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+        font-family: $text-font;
+    }
+
+    .b6 {
+        grid-area: area6;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        text-align: center;
+        font-family: $text-font;
+    }
+}
+
+.lookbox {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+
+    .Ilook {
+        width: 425px;
+        height: 516px;
+        object-fit: cover;
+        padding-top: 30px;
+    }
+
+    .lookcard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 60px;
+        padding-top: 70px;
+
+        figcaption {
+            color: $text-color;
+            font-family: $text-font;
+        }
+
+        .Iproduct {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .buybutton {
+            margin-top: 10px;
+        }
+    }
+}
+
+a {
+    font-family: $title-font;
+    color: $title-color;
+
+    &:hover {
+        color: $hover-color;
+        transition: .3s;
+    }
+}
+
+button {
+    background-color: black;
+    color: $title-color;
+    border-radius: 9px;
+    border: $title-color solid;
+
+    &:active {
+        color: $hover-color;
+        border: $hover-color solid;
+        transition: 0,3s;
+    }
+}

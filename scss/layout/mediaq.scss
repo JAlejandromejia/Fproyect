@@ -1,0 +1,43 @@
+
+/*query para la seccion inspirate en el flow*/
+@media (max-width: 768px) {
+    .lookbox {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .lookbox .Ilook {
+      padding: 0;
+      width: 100%;
+      height: 300px;
+    }
+  
+    .lookbox .lookcard {
+      padding-left: 0;
+      padding-top: 0;
+    }
+  
+    .lookbox .lookcard .Iproduct {
+      display: none;
+    }
+}
+
+  /*query para la vista de los productos en mobiles*/
+@media (max-width: 767px) {
+    .productbuygallery {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  
+      .productgallery,
+      .productinfo {
+        width: 100%;
+      }
+    }
+}
+@media (max-width: 767px) {
+  .accesoriesgallery {
+  width: 100%;
+  }
+}

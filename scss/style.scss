@@ -1,0 +1,14 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap');
+/*vars*/
+@import 'base/vars';
+@import 'base/reset';
+/*components*/
+@import 'components/navbar';
+@import 'components/footer';
+/*query/pages*/
+@import 'layout/page';
+@import 'layout/form';
+@import 'layout/products';
+@import 'layout/mediaq'

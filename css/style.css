@@ -1,0 +1,680 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap");
+/*vars*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*components*/
+.textyellow {
+  color: rgb(255, 242, 1);
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 8%;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aqua;
+}
+footer .header-logo {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+footer .social-icons-container,
+footer .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+footer .footer-menu-container {
+  list-style-type: none;
+  font-size: 18px;
+}
+footer .footer-menu-container .menu-item {
+  padding-right: 2.5rem;
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+i {
+  height: auto;
+  width: auto;
+  border: 1px;
+  margin: 1rem;
+  font-size: 30px;
+  cursor: pointer;
+}
+i:hover {
+  color: rgb(226, 12, 29);
+  transition: 0.3s;
+}
+
+/*query/pages*/
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: Bruno Ace SC;
+  color: rgb(255, 242, 1);
+  font-size: 20px;
+  padding-top: 80px;
+  padding-left: 10px;
+}
+
+h2 {
+  color: aqua;
+  font-family: Chakra Petch;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+h5 {
+  font-family: Bruno Ace SC;
+  color: rgb(255, 242, 1);
+}
+
+p {
+  color: aqua;
+  font-family: Chakra Petch;
+  padding-top: 10px;
+}
+
+.imgcarrucel {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.imgsection {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  padding-bottom: 30px;
+}
+
+.gridproducts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.gridproducts figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.gridproducts figure img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+.gridproducts figure figcaption {
+  color: aqua;
+  font-family: Chakra Petch;
+}
+.gridproducts figure:hover {
+  filter: saturate(170%);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.gridmodels {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 250px);
+  grid-template-areas: "area1 area2 area3" "area4 area5 area6";
+}
+.gridmodels img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gridmodels p:hover {
+  color: rgb(226, 12, 29);
+  transition: 0.3s;
+}
+.gridmodels .b1 {
+  grid-area: area1;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  font-family: Chakra Petch;
+}
+.gridmodels .b2 {
+  grid-area: area2;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  font-family: Chakra Petch;
+}
+.gridmodels .b3 {
+  grid-area: area3;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  font-family: Chakra Petch;
+}
+.gridmodels .b4 {
+  grid-area: area4;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  font-family: Chakra Petch;
+}
+.gridmodels .b5 {
+  grid-area: area5;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  font-family: Chakra Petch;
+}
+.gridmodels .b6 {
+  grid-area: area6;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  font-family: Chakra Petch;
+}
+
+.lookbox {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+}
+.lookbox .Ilook {
+  width: 425px;
+  height: 516px;
+  object-fit: cover;
+  padding-top: 30px;
+}
+.lookbox .lookcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 60px;
+  padding-top: 70px;
+}
+.lookbox .lookcard figcaption {
+  color: aqua;
+  font-family: Chakra Petch;
+}
+.lookbox .lookcard .Iproduct {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.lookbox .lookcard .buybutton {
+  margin-top: 10px;
+}
+
+a {
+  font-family: Bruno Ace SC;
+  color: rgb(255, 242, 1);
+}
+a:hover {
+  color: rgb(226, 12, 29);
+  transition: 0.3s;
+}
+
+button {
+  background-color: black;
+  color: rgb(255, 242, 1);
+  border-radius: 9px;
+  border: rgb(255, 242, 1) solid;
+}
+button:active {
+  color: rgb(226, 12, 29);
+  border: rgb(226, 12, 29) solid;
+  transition: 0, 3s;
+}
+
+.formbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+.formbody .formbox {
+  position: relative;
+  width: 380px;
+  height: 500px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.formbody .formbox::before, .formbody .formbox::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, aqua, aqua);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.formbody .formbox::after {
+  animation-delay: -3s;
+}
+.formbody .formbox form {
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background: #1c1c1c;
+  z-index: 10;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.formbody .formbox form h5 {
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.formbody .formbox form .formdata {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+.formbody .formbox form .formdata input {
+  position: relative;
+  width: 100%;
+  padding: 9px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: aqua;
+  font-size: 1em;
+  font-family: Chakra Petch;
+  letter-spacing: 0.05em;
+}
+.formbody .formbox form .formdata label {
+  padding: 9px;
+  font-size: 1em;
+  color: aqua;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  font-family: Chakra Petch;
+}
+.formbody .formbox form .formdata hr {
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 242, 1);
+}
+.formbody .formbox form .formsubmit {
+  border: none;
+  outline: none;
+  padding: 9px;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-family: Chakra Petch;
+}
+.formbody .formbox form .formsubmit:active {
+  color: rgb(226, 12, 29);
+}
+
+.formbox2 {
+  position: relative;
+  width: 380px;
+  height: 550px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.formbox2::before, .formbox2::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 400px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, aqua, aqua);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.formbox2::after {
+  animation-delay: -3s;
+}
+.formbox2 .form2 {
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background: #1c1c1c;
+  z-index: 10;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.formbox2 .form2 h5 {
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.formbox2 .form2 .formdata2 {
+  position: relative;
+  width: 300px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.formbox2 .form2 .formdata2 input {
+  position: relative;
+  width: 100%;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: aqua;
+  font-family: Chakra Petch;
+  letter-spacing: 0.05em;
+}
+.formbox2 .form2 .formdata2 label {
+  padding: 6px;
+  color: aqua;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  font-family: Chakra Petch;
+}
+.formbox2 .form2 .formdata2 hr {
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 242, 1);
+}
+.formbox2 .form2 .recibmail {
+  color: aqua;
+  font-family: Chakra Petch;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.formbox2 .form2 .privacytext {
+  color: aqua;
+  font-family: Chakra Petch;
+  font-size: 12px;
+}
+.formbox2 .form2 .formsubmit2 {
+  border: none;
+  outline: none;
+  padding: 9px;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-family: Chakra Petch;
+  font-size: 15px;
+}
+.formbox2 .form2 .formsubmit2:active {
+  color: rgb(226, 12, 29);
+}
+
+.avisoimg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avisoimg img {
+  max-height: 400px;
+  max-width: 300px;
+}
+
+.aviso {
+  margin: 0 auto;
+  max-width: 200px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.aviso1 {
+  margin: 0 auto;
+  max-width: 100px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header {
+  color: rgb(255, 242, 1);
+  font-family: Bruno Ace SC;
+  font-size: 25px;
+}
+
+.productbuygallery {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+}
+.productbuygallery .productgallery {
+  width: 50%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 250px);
+  grid-template-areas: "area1 area1 area1" "area2 area3 area4" "area5 area5 area5";
+}
+.productbuygallery .productgallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.productbuygallery .productgallery img:hover {
+  transform: scale(1.3);
+  filter: saturate(170%);
+  transition: 0.35s;
+}
+.productbuygallery .productgallery .area1 {
+  grid-area: area1;
+}
+.productbuygallery .productgallery .area2 {
+  grid-area: area2;
+}
+.productbuygallery .productgallery .area3 {
+  grid-area: area3;
+}
+.productbuygallery .productgallery .area4 {
+  grid-area: area4;
+}
+.productbuygallery .productgallery .area5 {
+  grid-area: area5;
+}
+.productbuygallery .productgallery .productgalleryimg5 {
+  object-position: top center;
+}
+.productbuygallery .productinfo {
+  width: 50%;
+  padding-left: 30px;
+}
+.productbuygallery .productinfo .productname {
+  padding-bottom: 20px;
+}
+.productbuygallery .productinfo .productvariant {
+  padding-bottom: 10px;
+}
+.productbuygallery .productinfo .productvariantimg {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+  border: 1px solid rgb(226, 12, 29);
+  border-radius: 3px;
+}
+.productbuygallery .productinfo .productsizevariant {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productbuygallery .productinfo .productsizevariant .tallas input[type=radio] {
+  display: none;
+}
+.productbuygallery .productinfo .productsizevariant .tallas label {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  border: 1px solid rgb(255, 242, 1);
+  border-radius: 3px;
+  font-size: 20px;
+  font-family: Bruno Ace SC;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  color: aqua;
+  background-color: transparent;
+}
+.productbuygallery .productinfo .productsizevariant .tallas label:hover {
+  border: 1px solid rgb(226, 12, 29);
+}
+.productbuygallery .productinfo .productsizevariant .tallas input[type=radio]:checked + span {
+  color: rgb(226, 12, 29);
+  font-size: 24px;
+}
+.productbuygallery .productinfo .addtocart,
+.productbuygallery .productinfo .buynow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.productbuygallery .productinfo .addtocart button,
+.productbuygallery .productinfo .buynow button {
+  width: 90%;
+}
+.productbuygallery .productinfo .addtocart button:hover,
+.productbuygallery .productinfo .buynow button:hover {
+  color: rgb(226, 12, 29);
+  border: 1px solid rgb(226, 12, 29);
+  transition: 0.3s;
+}
+.productbuygallery .productinfo hr {
+  color: aqua;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.youmightlike {
+  width: 100%;
+  height: 500px;
+  padding-top: 30px;
+}
+.youmightlike .youmightlikebox {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+.youmightlike .youmightlikebox .youmightliketitle {
+  padding: 10px;
+}
+.youmightlike .youmightlikebox .youmightlikeproducts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.youmightlike .youmightlikebox .youmightlikeproducts .youmightlikeproduct {
+  margin: 0 10px;
+  width: 25%;
+}
+.youmightlike .youmightlikebox .youmightlikeproducts .youmightlikeproduct:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.youmightlike .youmightlikebox .youmightlikeproducts .youmightlikeproduct .youmightlikeproduct1 {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.youmightlike .youmightlikebox .youmightlikeproducts .youmightlikeproduct .youmightlikeproduct1:hover {
+  filter: saturate(170%);
+  transition: 0.3s;
+}
+.youmightlike figcaption {
+  color: aqua;
+  font-family: Chakra Petch;
+  font-size: 15px;
+}
+
+.accesoriesgallery {
+  width: 50%;
+}
+.accesoriesgallery .accesoriesgalleryimg {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+/*query para la seccion inspirate en el flow*/
+@media (max-width: 768px) {
+  .lookbox {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .lookbox .Ilook {
+    padding: 0;
+    width: 100%;
+    height: 300px;
+  }
+  .lookbox .lookcard {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .lookbox .lookcard .Iproduct {
+    display: none;
+  }
+}
+/*query para la vista de los productos en mobiles*/
+@media (max-width: 767px) {
+  .productbuygallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .productbuygallery .productgallery,
+  .productbuygallery .productinfo {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .accesoriesgallery {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

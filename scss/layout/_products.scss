@@ -1,0 +1,204 @@
+header {
+    color: $title-color;
+    font-family: $title-font;
+    font-size: 25px;
+}
+
+.productbuygallery {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+
+    .productgallery {
+        width: 50%;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 250px);
+        grid-template-areas:
+            'area1 area1 area1'
+            'area2 area3 area4'
+            'area5 area5 area5';
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &:hover {
+                transform: scale(1.3);
+                filter: saturate(170%);
+                transition: 0.35s;
+            }
+        }
+
+        .area1 {
+            grid-area: area1;
+        }
+
+        .area2 {
+            grid-area: area2;
+        }
+
+        .area3 {
+            grid-area: area3;
+        }
+
+        .area4 {
+            grid-area: area4;
+        }
+
+        .area5 {
+            grid-area: area5;
+        }
+
+        .productgalleryimg5 {
+            object-position: top center;
+        }
+    }
+
+    .productinfo {
+        width: 50%;
+        padding-left: 30px;
+
+        .productname {
+            padding-bottom: 20px;
+        }
+
+        .productvariant {
+            padding-bottom: 10px;
+        }
+
+        .productvariantimg {
+            width: 100px;
+            height: 130px;
+            object-fit: cover;
+            border: 1px solid $hover-color;
+            border-radius: 3px;
+        }
+
+        .productsizevariant {
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .tallas {
+                input[type="radio"] {
+                    display: none;
+                }
+
+                label {
+                    display: inline-block;
+                    width: 80px;
+                    height: 40px;
+                    border: 1px solid $title-color;
+                    border-radius: 3px;
+                    font-size: 20px;
+                    font-family: $title-font;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: pointer;
+                    color: $text-color;
+                    background-color: transparent;
+
+                    &:hover {
+                        border: 1px solid $hover-color;
+                    }
+                }
+
+                input[type="radio"]:checked+span {
+                    color: $hover-color;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .addtocart,
+        .buynow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+
+            button {
+                &:hover {
+                    color: $hover-color;
+                    border: 1px solid $hover-color;
+                    transition: .3s;
+                }
+
+                width: 90%;
+            }
+        }
+
+        hr {
+            color: $text-color;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+}
+
+
+.youmightlike {
+    width: 100%;
+    height: 500px;
+    padding-top: 30px;
+
+    .youmightlikebox {
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+
+        .youmightliketitle {
+            padding: 10px;
+        }
+
+        .youmightlikeproducts {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            .youmightlikeproduct {
+                margin: 0 10px;
+                width: 25%;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: .3s;
+                }
+
+                .youmightlikeproduct1 {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+
+                    &:hover {
+                        filter: saturate(170%);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
+
+    figcaption {
+        color: $text-color;
+        font-family: $text-font;
+        font-size: 15px;
+    }
+
+}
+
+.accesoriesgallery {
+    width: 50%;
+
+    .accesoriesgalleryimg {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+}
